@@ -1,0 +1,30 @@
+<div ng-controller="LoginController as ctrl" class="login-page" style="background-color: coral; height: 100vh">
+    <div class="row">
+        <div class="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4">
+           <!-- <img src="images/logo.png" class="user-avatar" />-->
+            <!--<h2>AGNI<small>  Flame On</small></h2><br>
+            <h5>Registration Desk</h5>-->
+            <h1 style="margin-top: 10%">Fresh Delivery</h1>
+            <br><br>
+            <form role="form" ng-submit="submit()">
+
+                <div class="form-content">
+                    <div class="form-group">
+                        <input type="text" class="form-control input-underline input-lg" ng-model ="ctrl.userName" placeholder="Email">
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control input-underline input-lg" ng-model = "ctrl.password" placeholder="Password">
+                    </div>
+                </div>
+                <!--<div style="height:50px; width: 35%; float: left"></div>-->
+
+                <button type="submit" class="btn btn-white btn-success btn-lg btn-rounded" ng-click = "ctrl.userValidation()" >Login</button>&nbsp;&nbsp;&nbsp;&nbsp;
+                <button type="submit" class="btn btn-white btn-info btn-lg btn-rounded" ng-click = "ctrl.stateChange()">Signup</button>
+
+            </form>
+
+        </div>
+    </div>
+
+</div>

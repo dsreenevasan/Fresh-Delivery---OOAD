@@ -1,0 +1,26 @@
+{
+  "prodDB":{
+    "username":"aravind",
+    "password":"123456",
+    "hostPrimary":{
+      "host":"",
+      "port":""
+    },
+    "hostSecondary":{
+      "host":"",
+      "port":""
+    }
+  },
+  "delta":{
+    "host":"",
+    "port":""
+  },
+  "gamma":{
+    "host":"127.0.0.1",
+    "port":"8080"
+  },
+  "alpha":{
+    "host":"52.66.75.229",
+    "port":"8080"
+  }
+}

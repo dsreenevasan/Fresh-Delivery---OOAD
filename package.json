@@ -1,0 +1,27 @@
+{
+  "name": "freshdelivery",
+  "version": "1.0.0",
+  "description": "A BtoB e-commerce project",
+  "main": "freshDelivery.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fresh",
+    "delivery",
+    "fresh",
+    "delivery",
+    "Fresh",
+    "Delivery"
+  ],
+  "author": "Durai Sreenvasan",
+  "license": "ISC",
+  "dependencies": {
+    "async": "^2.1.1",
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "express": "^4.14.0",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.6.0"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "mongo":{
+    "alpha": {
+      "host": "",
+      "port": ""
+    },
+    "beta":{
+      "host":"",
+      "port":""
+    },
+    "gamma":{
+      "host":"mongodb://localhost/freshDelivery",
+      "port":"27017"
+    },
+    "prod":{
+      "host":"",
+      "port":""
+    }
+  }
+}

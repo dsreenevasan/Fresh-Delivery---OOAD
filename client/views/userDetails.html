@@ -1,0 +1,96 @@
+<div ng-controller="LoginController as ctrl" style="background: #435354; height: 100vh; overflow: auto">
+    <toaster-container toaster-options="{'time-out': 3000, 'close-button':true, 'animation-class': 'toast-top-center'}"></toaster-container>
+    <div style="height: 200px"></div>
+            <form class="simple-form" name="userForm"  id = "userForm" style="color: #f5f5f5; margin-left: 30%">
+                <div class="row">
+                    <div class="form-group">
+                        <!--<div class="column col-md-2">
+                            <label>Name</label>
+                        </div>-->
+                        <div class="column col-md-5">
+                            <input type="text" class="form-control input-underline input-lg" ng-model="ctrl.name" name="name" style="width: 350px" placeholder="Name" required >
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="form-group">
+                       <!-- <div class="column col-md-2">
+                            <label>E-mail Id</label>
+                        </div>-->
+                        <div class="column col-md-5">
+                            <input type="text" class="form-control input-underline input-lg" ng-model="ctrl.mailId" name="mailId" style="width: 350px" placeholder="E-mail Id" required
+                                   ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/">
+                        </div>
+                    </div>
+                    <br>
+                    <p style="display:inline; color: red" ng-show="userForm.mailId.$invalid && !userForm.mailId.$pristine" class="help-block"><br>Enter a valid E-mail ID</p>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="form-group">
+                        <!-- <div class="column col-md-2">
+                             <label>E-mail Id</label>
+                         </div>-->
+                        <div class="column col-md-5">
+                            <input type="password" class="form-control input-underline input-lg" ng-model="ctrl.password" name="passwrd" style="width: 350px" placeholder="Password" required>
+                        </div>
+                    </div>
+                    <br>
+                    <p style="display:inline; color: red" ng-show="userForm.mailId.$invalid && !userForm.mailId.$pristine" class="help-block"><br>Enter a valid E-mail ID</p>
+                </div>
+                <!--<br><br>
+                <div class="row">
+                    <div class="form-group">
+                        &lt;!&ndash;<div class="column col-md-2">
+                            <label>Gender</label>
+                        </div>&ndash;&gt;
+                        <div class="column col-md-5">
+                            <input type="radio" ng-model="ctrl.gender" value="male" name="gender" ng-click="ctrl.genderToggle('male')"><label style="font-size: 20px; color: lightgrey">&nbsp;&nbsp;Male &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                            <input type="radio" ng-model="ctrl.gender" value="female" name="gender" ng-click="ctrl.genderToggle('female')"><label style="font-size: 20px; color: lightgrey">&nbsp;&nbsp;Female</label>
+                        </div>
+                    </div>
+                </div>-->
+                <br><br>
+                <div class="row">
+                    <div class="form-group">
+                        <!--<div class="column col-md-2">
+                            <label>Contact Number</label>
+                        </div>-->
+                        <div class="column col-md-5">
+                            <input type="number" class="form-control input-underline input-lg" ng-model="ctrl.contactNumber" name="contactNumber" style="width: 350px" placeholder="Contact Number"
+                                   min="7000000000" max="9999999999" required>
+                        </div>
+                    </div>
+                    <br>
+                    <p style="display:inline; color: red" ng-show="userForm.contactNumber.$invalid && !userForm.contactNumber.$pristine" class="help-block"><br>Phone number should be 10 characters</p>
+                </div>
+                <br><br>
+                <div class="row">
+                    <div class="form-group">
+                        <!--<div class="column col-md-2">
+                            <label>College Name</label>
+                        </div>-->
+                        <div class="column col-md-5">
+                            <input type="text" class="form-control input-underline input-lg" ng-model="ctrl.address" name="address" style="width: 350px" placeholder="Address" required>
+                        </div>
+                    </div>
+                </div>
+                <!--<br><br>
+                <div class="row">
+                    <div class="form-group">
+                        &lt;!&ndash;<div class="column col-md-2">
+                            <label>Department</label>
+                        </div>&ndash;&gt;
+                        <div class="column col-md-5">
+                            <input type="text" class="form-control input-underline input-lg" ng-model="ctrl.department" name="department" style="width: 350px" placeholder="Department" required>
+                        </div>
+                    </div>
+                </div>-->
+                <br><br>
+                <button style="margin-left:0%; width: 150px;" class="btn btn-danger" type="submit"
+                        ng-click="ctrl.cancelUser()"><label style="font-size: 15px; color: lightgrey">Cancel</label></button>
+                <button style="margin-left:3%; width: 150px;" class="btn btn-success" type="submit" ng-disabled="userForm.$invalid"
+                        ng-click="ctrl.signup()"><label style="font-size: 15px; color: lightgrey">Signup</label></button>
+            </form>
+        </div>
