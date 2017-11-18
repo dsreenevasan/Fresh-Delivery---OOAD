@@ -19,7 +19,7 @@
 <ul>
 <li> cd <project_directory></li>
 <li> sudo npm install </li>
-<li> node fresDelivery.js <li>
+<li> node fresDelivery.js </li>
 </ul>
 
 <b> Make sure you have installed Mongo DB in your system </b>
