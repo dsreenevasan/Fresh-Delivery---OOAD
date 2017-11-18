@@ -4,7 +4,7 @@
 <br>
 <ul>
 <li>
-	cd <project_directory>
+	cd project_directory
 </li>
 <li>
 	sudo npm install
@@ -17,7 +17,7 @@
 <br>
 <b>Steps to run backend</b>
 <ul>
-<li> cd <project_directory></li>
+<li> cd project_directory</li>
 <li> sudo npm install </li>
 <li> node fresDelivery.js </li>
 </ul>
